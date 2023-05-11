@@ -333,41 +333,155 @@ Third level: 1
 // Код возьмите из предыдущего домашнего задания
 
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false,
-};
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false,
+// };
 
 
-for (let i = 0; i < 2; i++) {
-	const a = prompt('Один из последних просмотренных фильмов?', ''),
-			b = prompt('На сколько оцените его', '');
+// for (let i = 0; i < 2; i++) {
+// 	const a = prompt('Один из последних просмотренных фильмов?', ''),
+// 			b = prompt('На сколько оцените его', '');
 
-	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-		personalMovieDB.movies[a] = b;
-		console.log('done'); 
-	} else {
-		console.log('error');
-		i--;
-	}
+// 	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+// 		personalMovieDB.movies[a] = b;
+// 		console.log('done'); 
+// 	} else {
+// 		console.log('error');
+// 		i--;
+// 	}
 	
 
-	if(personalMovieDB.count < 10) {
-		console.log('Просмотрено довольно мало фильмов');
-	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-		console.log('Вы классический зритель');
-	} else if (personalMovieDB.count >= 30) {
-		console.log('Вы киноман');
-	} else {
-		console.log('Произошла ошибка');
-	}
-}
+// 	if(personalMovieDB.count < 10) {
+// 		console.log('Просмотрено довольно мало фильмов');
+// 	} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 		console.log('Вы классический зритель');
+// 	} else if (personalMovieDB.count >= 30) {
+// 		console.log('Вы киноман');
+// 	} else {
+// 		console.log('Произошла ошибка');
+// 	}
+// }
 
-console.log(personalMovieDB);
+// console.log(personalMovieDB);
 
+//========================================================================================================================================================
+
+
+// 1) Выведите с помощью цикла столбец чисел от 1 до 100. 
+// for (var i = 1; i <= 100; i++) {
+// 	document.write(i + '<br>');
+// }
+
+// 2) Выведите с помощью цикла столбец чисел от 100 до 1.
+
+// function myFn() {
+// 	for (i = 100; i > 0; i--) {
+// 		console.log(i);
+// 	}
+// }
+
+// myFn();
+
+// 3) Выведите с помощью цикла столбец четных чисел от 1 до 100.
+
+	// for (i = 2; i < 100; i++) {
+	// 	if (i % 2 === 0) {
+	// 		console.log(i);
+	// 	}
+	// }
+
+
+	// for (let i = 2; i <= 100; i += 2) {
+	// 	console.log(i); // выводим значение i в консоль
+	//  }
+
+	// 4) Заполните массив 10-ю иксами с помощью цикла
+
+// const arr = [];
+
+// for (i = 0; i < 10; i++) {
+// 	arr.push('x')
+// }
+
+// console.log(arr);
+
+// let arr = [];
+
+// function getArr() {
+// 	for (i = 0; i < 10; i++) {
+// 		arr[i] = 'x';
+// 	}
+// 	return arr;
+// }
+
+// console.log(getArr())
+
+
+// let arr = [];
+
+// function myFn (num) {
+// 	for(i = 0; i < 10; i++) {
+// 		arr[i] = num;
+// 	}
+// 	return arr;
+// }
+
+// console.log(myFn('x'));
+
+// 5) Заполните массив числами от 1 до 10 с помощью цикла
+
+// const arr = [];
+
+// function myFn(num) {
+// 	for (i = 1; i <= 10; i++) {
+// 		arr[i-1] = i;
+// 	}
+// 	return arr;
+// }
+
+// console.log(myFn());
+
+//========================================================================================================================================================
+
+// 1) Создайте функцию, которая будет на вход принимать 1 аргумент с именем человека и возвращать строку.
+
+
+// function myFn(name) {
+// 	if (typeof name === 'string') {
+// 		console.log(`Привет, ${name}!`);
+// 	} else {
+// 		console.log('Введите строку');
+// 	}
+// 	return name;
+// }
+// console.log(myFn('Vova'));
+
+// 2) Создайте функцию, которая принимает в себя 1 аргумент в виде целого числа и возвращает массив из трех чисел: одно на 1 меньше, сам аргумент, и число на 1 больше.
+
+// const arr = [];
+
+// function myFn(num) {
+// 	for (i = 0; i < 3; i++) {
+// 		arr[0] = i - 1; 
+// 		arr[1] = i; 
+// 		arr[2] = i + 1; 
+// 	}
+// 	return arr;
+// }
+
+// console.log(myFn(2));
+
+
+// function myFn(num) {
+// 	const arr  = [num - 1, num, num + 1];
+// 	return arr
+// }
+
+// console.log(myFn(2));
 
